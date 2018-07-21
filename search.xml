@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[tomcat学习笔记1]]></title>
+    <url>%2F2018%2F07%2F21%2Ftomcat%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%2F</url>
+    <content type="text"><![CDATA[1.修改端口号conf文件夹里边的 server.xml修改tomcat端口号 2.修改tomcat管理页面的登录密码打开conf文件夹tomcat-users.xml文件在倒数第二行加上以下代码 二.eclipse中整合tomcat1.打开servers选项卡（如果没有，window-show view-servers) 2.点击创建一个server，选择tomcat8 3.在弹出的窗口中，选择tomcat8的安装目录和jre的安装目录 4.点完成之后server创建完毕。 5.新建web项目，在左侧空白地方，右键–new–Dynamic Web Project填写项目名字，选择刚才创建的server，点击finish完成创建。 6.右键项目名字，然后选择run as server运行刚才创建的项目。 三, 改默认编码 改jsp文件编码window–preference–web–jspFile 设置项目的编码 设置eclipse 文件编码]]></content>
+      <categories>
+        <category>Codes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[如何使用hexo建立自己的博客（1）]]></title>
+    <url>%2F2018%2F07%2F21%2Fmakeblog%2F</url>
+    <content type="text"><![CDATA[1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录 hexo i blog //init的缩写 blog是项目名cd blog //切换到站点根目录hexo g //generetor的缩写hexo s //server的缩写 本地server默认端口号 4000，若本地端口号被占用，命令为：hexo s -p xxxx //xxxx为端口号打开浏览器输入localhost：xxxx若成功，则显示hexo默认页面 3.打开git在站点根目录输入git clone https://github.com/iissnan/hexo-theme-next themes/next安装next主题hexo支持各种主题笔者使用next4.完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next配置文件就是根目录下的_config.yml文件hexo默认主题landscape，这里改为next5.在git输入：hexo clean //清除缓存hexo g //重新生成代码hexo s //部署到本地打开localhost：xxxx进行测试next主题样式有三种：Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白Mist - Muse 的紧凑版本，整洁有序的单栏外观Pisces - 双栏 Scheme，小家碧玉似的清新笔者使用Pisces,进行设置，笔者最终成品如图所示，下一节介绍如何配置next主题]]></content>
+      <categories>
+        <category>Codes</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[游戏购买计划]]></title>
+    <url>%2F2018%2F07%2F21%2F2018%2F</url>
+    <content type="text"><![CDATA[#20186.生化危机6 1507.生化危机5 1508.生化危机4 150 如龙3 230 神界原罪29.蜘蛛侠 350 古墓丽影 35010.荒野大镖客 320 刺客信条奥德赛 32012.任天堂明星大乱斗 400 下半年头等大事Xboxone X #2019王国之心3生化危机2战争机器5鬼泣5火焰纹章 #未知光环shadow die twice死亡搁浅仁王TLOU2赛博朋克2077八方旅人 #未完待续]]></content>
+      <categories>
+        <category>Games</category>
+      </categories>
+  </entry>
+</search>
