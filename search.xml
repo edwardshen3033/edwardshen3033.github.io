@@ -4,6 +4,9 @@
     <title><![CDATA[如何使用hexo建立自己的博客（2）]]></title>
     <url>%2F2018%2F07%2F22%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89%2F</url>
     <content type="text"><![CDATA[关于next的主题配置首先要了解站点配置文件和主题配置文件：站点配置文件位于博客根目录下的_config.yml文件主题配置文件位于/theme/next文件夹下的_config.yml文件 在站点配置文件中，可以看到如下：title: 对应的是博客主站名称subtitle:对应博客副标题description:对应博客描述keywords:对应博客关键词author:对应博客作者名称language:对应语言（默认为英文，zh-Hans对应简体中文）timezone:默认系统时区注：在进行站点文件配置时，字段冒号和配置内容间必须要有一个半角的空格，不然在编辑时一定会出错以上内容编辑完毕，大概框架如图：注：上图中头像以及搜索分类功能此时还未完成 接下来进行主题配置：1.加入头像选定你想设置的头像，放入themes/next/source/images 我命名为header,进入主题配置文件：找到如下字段进行设置： 2.加入自己的微博链接如果你还想加入其它个人主页链接，也可进行配置，但大部分都是在国内被ban的XD 3.加入友链： 4.添加本地搜索功能 安装 hexo-generator-searchdb，在站点的根目录下执行以下命令： $ npm install hexo-generator-searchdb --save 编辑站点配置文件，新增以下内容到任意位置： search: path: search.xml field: post format: html limit: 10000 编辑 主题配置文件，启用本地搜索功能： Local searchlocal_search: enable: true 5.添加分类 在终端窗口下，定位到 Hexo 站点目录下。使用 hexo new page 新建一个页面，命名为 categories ：$ cd your-hexo-site$ hexo new page categories 在编写的markdown文章里添加categories属性即可 注意：如果有集成评论服务，页面也会带有评论。 若需要关闭的话，请添加字段 comments 并将值设置为 false，如：---title: 分类date: 2018-07-22 12:39:04type: &quot;categories&quot;comments: false--- 在菜单中添加链接。编辑 主题配置文件， 添加 categories 到 menu 中，如下:去掉# 即可]]></content>
+      <categories>
+        <category>Codes</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[tomcat学习笔记1]]></title>
