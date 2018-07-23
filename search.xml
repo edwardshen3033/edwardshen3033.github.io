@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Bootstrap学习]]></title>
+    <url>%2F2018%2F07%2F23%2FBootstrap%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[Bootstrap学习 1.标题：标题的具体运用非常简单，和我们平时运用是一样的，使用&lt;h1&gt;-&lt;h6&gt;标签，分别表示标题一至标题六，h 后面的数字越大，表示级别越小，文本也越小。来看一个简单的效果：右侧代码编辑器中的10-16行的代码。在Bootstrap中为了让非标题元素和标题使用相同的样式，还特意定义了.h1-.h6六个类名。如右侧代码编辑器中 18-23行代码所示： 除此之外，我们在Web的制作中，常常会碰到在一个标题后面紧跟着一行小的副标题。在Bootstrap中他也考虑了这种排版效果，使用了&lt;small&gt;标签来制作副标题。这个副标题具有其自己的一些独特样式： 2.段落 &lt;p&gt;标签用法与普通html一致 3.强调内容在实际项目中，对于一些重要的文本，希望突出强调的部分都会做另外的样式处理。Bootstrap同样对这部分做了一些轻量级的处理。如果想让一个段落p突出显示，可以通过添加类名“.lead”实现，其作用就是增大文本字号，加粗文本，而且对行高和margin也做相应的处理。用法如下：&lt;p class=&quot;lead&quot;&gt;除此之外，Bootstrap还通过元素标签:&lt;small&gt;、&lt;strong&gt;、&lt;em&gt;和&lt;cite&gt;给文本做突出样式处理。 4.粗体在Bootstrap中，可以使用&lt;b&gt;和&lt;strong&gt;标签让文本直接加粗。 5.斜体在排版中，除了用加粗来强调突出的文本之外，还可以使用斜体。在Bootstrap中还可以通过使用标签&lt;em&gt;或&lt;i&gt;来实现。 6.强调相关的类在Bootstrap中除了使用标签&lt;strong&gt;、&lt;em&gt;等说明正文某些字词、句子的重要性，Bootstrap还定义了一套类名，这里称其为强调类名（类似前面说的“.lead”）,这些强调类都是通过颜色来表示强调，具本说明如下： .text-muted：提示，使用浅灰色（#999）.text-primary：主要，使用蓝色（#428bca）.text-success：成功，使用浅绿色(#3c763d).text-info：通知信息，使用浅蓝色（#31708f）.text-warning：警告，使用黄色（#8a6d3b）.text-danger：危险，使用褐色（#a94442） 对应效果如图所示 7.文本对齐风格为了简化操作，方便使用，Bootstrap通过定义四个类名来控制文本的对齐风格： ☑ .text-left：左对齐 ☑ .text-center：居中对齐 ☑ .text-right：右对齐 ☑ .text-justify：两端对齐 8.Bootstrap列表Bootstrap根据平时的使用情形提供了六种形式的列表： ☑ 普通列表 ☑ 有序列表 ☑ 去点列表 ☑ 内联列表 ☑ 描述列表 ☑ 水平描述列表无序列表无序列表和有序列表使用方式和我们平时使用的一样（无序列表使用ul，有序列表使用ol标签），在样式方面，Bootstrap只是在此基础上做了一些细微的优化。去点列表在Bootstrap中默认情况下无序列表和有序列表是带有项目符号的，但在实际工作中很多时候，我们的列表是不需要这个编号的，比如说用无序列表做导航的时候。Bootstrap为众多开发者考虑的非常周道，通过给无序列表添加一个类名“.list-unstyled”,这样就可以去除默认的列表样式的风格。内联列表Bootstrap像去点列表一样，通过添加类名“.list-inline”来实现内联列表，简单点说就是把垂直列表换成水平列表，而且去掉项目符号（编号），保持水平显示。也可以说内联列表就是为制作水平导航而生。注：list-inline要添加在ul标签内定义列表对于定义列表而言，Bootstrap并没有做太多的调整，只是调整了行间距，外边距和字体加粗效果。水平定义列表水平定义列表就像内联列表一样，Bootstrap可以给&lt;dl&gt;添加类名“.dl-horizontal”给定义列表实现水平显示效果。宽屏下的效果（屏幕大于768px）：当你缩小你的浏览器屏幕时，水平定义列表将回复到原始的状态。]]></content>
+      <categories>
+        <category>Codes</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[如何使用hexo建立自己的博客（2）]]></title>
     <url>%2F2018%2F07%2F22%2F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89%2F</url>
     <content type="text"><![CDATA[关于next的主题配置首先要了解站点配置文件和主题配置文件：站点配置文件位于博客根目录下的_config.yml文件主题配置文件位于/theme/next文件夹下的_config.yml文件 在站点配置文件中，可以看到如下：title: 对应的是博客主站名称subtitle:对应博客副标题description:对应博客描述keywords:对应博客关键词author:对应博客作者名称language:对应语言（默认为英文，zh-Hans对应简体中文）timezone:默认系统时区注：在进行站点文件配置时，字段冒号和配置内容间必须要有一个半角的空格，不然在编辑时一定会出错以上内容编辑完毕，大概框架如图：注：上图中头像以及搜索分类功能此时还未完成 接下来进行主题配置：1.加入头像选定你想设置的头像，放入themes/next/source/images 我命名为header,进入主题配置文件：找到如下字段进行设置： 2.加入自己的微博链接如果你还想加入其它个人主页链接，也可进行配置，但大部分都是在国内被ban的XD 3.加入友链： 4.添加本地搜索功能 安装 hexo-generator-searchdb，在站点的根目录下执行以下命令： $ npm install hexo-generator-searchdb --save 编辑站点配置文件，新增以下内容到任意位置： search: path: search.xml field: post format: html limit: 10000 编辑 主题配置文件，启用本地搜索功能： Local searchlocal_search: enable: true 5.添加分类 在终端窗口下，定位到 Hexo 站点目录下。使用 hexo new page 新建一个页面，命名为 categories ：$ cd your-hexo-site$ hexo new page categories 在编写的markdown文章里添加categories属性即可 注意：如果有集成评论服务，页面也会带有评论。 若需要关闭的话，请添加字段 comments 并将值设置为 false，如：---title: 分类date: 2018-07-22 12:39:04type: &quot;categories&quot;comments: false--- 在菜单中添加链接。编辑 主题配置文件， 添加 categories 到 menu 中，如下:去掉# 即可]]></content>
@@ -19,7 +27,7 @@
   <entry>
     <title><![CDATA[如何使用hexo建立自己的博客（1）]]></title>
     <url>%2F2018%2F07%2F21%2Fmakeblog%2F</url>
-    <content type="text"><![CDATA[1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录 hexo i blog //init的缩写 blog是项目名cd blog //切换到站点根目录hexo g //generetor的缩写hexo s //server的缩写 本地server默认端口号 4000，若本地端口号被占用，命令为：hexo s -p xxxx //xxxx为端口号打开浏览器输入localhost：xxxx若成功，则显示hexo默认页面 3.打开git在站点根目录输入git clone https://github.com/iissnan/hexo-theme-next themes/next安装next主题hexo支持各种主题笔者使用next4.完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next配置文件就是根目录下的_config.yml文件hexo默认主题landscape，这里改为next5.在git输入：hexo clean //清除缓存hexo g //重新生成代码hexo s //部署到本地打开localhost：xxxx进行测试next主题样式有三种：Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白Mist - Muse 的紧凑版本，整洁有序的单栏外观Pisces - 双栏 Scheme，小家碧玉似的清新笔者使用Pisces,进行设置，笔者最终成品如图所示，下一节介绍如何配置next主题]]></content>
+    <content type="text"><![CDATA[1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录hexo i blog //init的缩写 blog是项目名cd blog //切换到站点根目录hexo g //generetor的缩写hexo s //server的缩写 本地server默认端口号 4000，若本地端口号被占用，命令为：hexo s -p xxxx //xxxx为端口号打开浏览器输入localhost：xxxx若成功，则显示hexo默认页面 3.打开git在站点根目录输入git clone https://github.com/iissnan/hexo-theme-next themes/next安装next主题hexo支持各种主题笔者使用next 4.完成后，打开 站点配置文件找到 theme 字段，并将其值更改为 next配置文件就是根目录下的_config.yml文件hexo默认主题landscape，这里改为next 5.在git输入：hexo clean //清除缓存hexo g //重新生成代码hexo s //部署到本地打开localhost：xxxx进行测试next主题样式有三种：Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白Mist - Muse 的紧凑版本，整洁有序的单栏外观Pisces - 双栏 Scheme，小家碧玉似的清新笔者使用Pisces,进行设置，笔者最终成品如图所示，下一节介绍如何配置next主题]]></content>
       <categories>
         <category>Codes</category>
       </categories>
@@ -27,7 +35,7 @@
   <entry>
     <title><![CDATA[游戏购买计划]]></title>
     <url>%2F2018%2F07%2F21%2F2018%2F</url>
-    <content type="text"><![CDATA[#20186.生化危机6 1507.生化危机5 1508.生化危机4 150 如龙3 230 神界原罪29.蜘蛛侠 350 古墓丽影 35010.荒野大镖客 320 刺客信条奥德赛 32012.任天堂明星大乱斗 400 下半年头等大事Xboxone X #2019王国之心3生化危机2战争机器5鬼泣5火焰纹章 #未知光环shadow die twice死亡搁浅仁王TLOU2赛博朋克2077八方旅人 #未完待续]]></content>
+    <content type="text"><![CDATA[20186.生化危机6 1507.生化危机5 1508.生化危机4 150 如龙3 230 神界原罪29.蜘蛛侠 350 古墓丽影 35010.荒野大镖客 320 刺客信条奥德赛 32012.任天堂明星大乱斗 400 下半年头等大事Xboxone X 2019王国之心3生化危机2战争机器5鬼泣5火焰纹章 未知光环shadow die twice死亡搁浅仁王TLOU2赛博朋克2077八方旅人 #未完待续]]></content>
       <categories>
         <category>Games</category>
       </categories>

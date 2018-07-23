@@ -79,23 +79,23 @@
 
 
 
-<meta name="description" content="1.下载node.js  打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录 hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被">
+<meta name="description" content="1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被占用">
 <meta name="keywords" content="gamer coder">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用hexo建立自己的博客（1）">
 <meta property="og:url" content="http://yoursite.com/2018/07/21/makeblog/index.html">
 <meta property="og:site_name" content="摸鱼狂魔沈先生のblog">
-<meta property="og:description" content="1.下载node.js  打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录 hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被">
+<meta property="og:description" content="1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被占用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/21/makeblog/1532143630911.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/21/makeblog/1532145111236.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/21/makeblog/1532145331195.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/21/makeblog/1532145491398.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/21/makeblog/1532145883085.png">
-<meta property="og:updated_time" content="2018-07-21T07:21:34.575Z">
+<meta property="og:updated_time" content="2018-07-23T07:04:08.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使用hexo建立自己的博客（1）">
-<meta name="twitter:description" content="1.下载node.js  打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录 hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被">
+<meta name="twitter:description" content="1.下载node.js 打开第一个，使用npm在本地安装 hexo命令：npm install -g hexo-cli 2.打开项目存放目录hexo i blog //init的缩写 blog是项目名cd blog     //切换到站点根目录hexo g      //generetor的缩写hexo s      //server的缩写 本地server默认端口号 4000，若本地端口号被占用">
 <meta name="twitter:image" content="http://yoursite.com/2018/07/21/makeblog/1532143630911.png">
 
 
@@ -377,13 +377,13 @@
       
 
       
-        <p>1.下载node.js</p>
-<p><img src="./1532143630911.png" alt="Alt text"></p>
+        <h1 id="1-下载node-js"><a href="#1-下载node-js" class="headerlink" title="1.下载node.js"></a>1.下载node.js</h1><p><img src="./1532143630911.png" alt="Alt text"></p>
 <p>打开第一个，使用npm在本地安装 hexo<br>命令：<br><code>npm install -g hexo-cli</code></p>
-<p>2.打开项目存放目录</p>
-<p><code>hexo i blog //init的缩写 blog是项目名</code><br><code>cd blog     //切换到站点根目录</code><br><code>hexo g      //generetor的缩写</code><br><code>hexo s      //server的缩写</code></p>
+<h1 id="2-打开项目存放目录"><a href="#2-打开项目存放目录" class="headerlink" title="2.打开项目存放目录"></a>2.打开项目存放目录</h1><p><code>hexo i blog //init的缩写 blog是项目名</code><br><code>cd blog     //切换到站点根目录</code><br><code>hexo g      //generetor的缩写</code><br><code>hexo s      //server的缩写</code></p>
 <p>本地server默认端口号 4000，若本地端口号被占用，命令为：<br><code>hexo s -p xxxx //xxxx为端口号</code><br>打开浏览器输入localhost：xxxx<br>若成功，则显示hexo默认页面<br><img src="./1532145111236.png" alt="Alt text"></p>
-<p>3.打开git<br>在站点根目录输入<br><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>安装next主题<br>hexo支持各种主题<br><img src="./1532145331195.png" alt="Alt text"><br>笔者使用next<br>4.完成后，打开 站点配置文件， 找到 theme 字段，并将其值更改为 next<br>配置文件就是根目录下的_config.yml文件<br><img src="./1532145491398.png" alt="Alt text"><br>hexo默认主题landscape，这里改为next<br>5.在git输入：<br><code>hexo clean  //清除缓存</code><br><code>hexo g      //重新生成代码</code><br><code>hexo s      //部署到本地</code><br>打开localhost：xxxx进行测试<br>next主题样式有三种：<br><code>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</code><br><code>Mist - Muse 的紧凑版本，整洁有序的单栏外观</code><br><code>Pisces - 双栏 Scheme，小家碧玉似的清新</code><br>笔者使用Pisces,进行设置，笔者最终成品如图所示，下一节介绍如何配置next主题<br><img src="./1532145883085.png" alt="Alt text"></p>
+<h1 id="3-打开git"><a href="#3-打开git" class="headerlink" title="3.打开git"></a>3.打开git</h1><p>在站点根目录输入<br><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>安装next主题<br>hexo支持各种主题<br><img src="./1532145331195.png" alt="Alt text"><br>笔者使用next</p>
+<h1 id="4-完成后，打开-站点配置文件"><a href="#4-完成后，打开-站点配置文件" class="headerlink" title="4.完成后，打开 站点配置文件"></a>4.完成后，打开 站点配置文件</h1><p>找到 theme 字段，并将其值更改为 next<br>配置文件就是根目录下的_config.yml文件<br><img src="./1532145491398.png" alt="Alt text"><br>hexo默认主题landscape，这里改为next</p>
+<h1 id="5-在git输入："><a href="#5-在git输入：" class="headerlink" title="5.在git输入："></a>5.在git输入：</h1><p><code>hexo clean  //清除缓存</code><br><code>hexo g      //重新生成代码</code><br><code>hexo s      //部署到本地</code><br>打开localhost：xxxx进行测试<br>next主题样式有三种：<br><code>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</code><br><code>Mist - Muse 的紧凑版本，整洁有序的单栏外观</code><br><code>Pisces - 双栏 Scheme，小家碧玉似的清新</code><br>笔者使用Pisces,进行设置，笔者最终成品如图所示，下一节介绍如何配置next主题<br><img src="./1532145883085.png" alt="Alt text"></p>
 
       
     </div>
@@ -498,8 +498,17 @@ var jiathis_config={
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -518,7 +527,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -586,6 +595,22 @@ var jiathis_config={
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-下载node-js"><span class="nav-number">1.</span> <span class="nav-text">1.下载node.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-打开项目存放目录"><span class="nav-number">2.</span> <span class="nav-text">2.打开项目存放目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-打开git"><span class="nav-number">3.</span> <span class="nav-text">3.打开git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-完成后，打开-站点配置文件"><span class="nav-number">4.</span> <span class="nav-text">4.完成后，打开 站点配置文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-在git输入："><span class="nav-number">5.</span> <span class="nav-text">5.在git输入：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
